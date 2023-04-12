@@ -1,765 +1,1301 @@
+
 <!DOCTYPE html>
 <html lang="en">
-  
-  <head>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>
-      Еженедельное расписание Youtube-стримов
-    </title>
-    <meta content="Расписание Youtube-стримов 2023" name="description">
-    <meta content="" name="keywords">
-    <!-- Favicons -->
-    <link href="assets/img/favicon.ico" rel="icon">
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-    <!-- Vendor CSS Files -->
-    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-    <!-- Template Main CSS File -->
-    <link href="assets/css/style.css" rel="stylesheet">
-	<script src="https://cdn.jsdelivr.net/npm/luxon@3.3.0/build/global/luxon.min.js"></script>
-    <script src="https://unpkg.com/mustache@latest"></script>
-    <script id="template" type="x-tmpl-mustache">
-          <h2 class="text-center">
-            {{day}}
-          </h2>
-          {{ #streams }}
-            <div class="strim_name">
-            <a href="{{channel}}" target="_blank">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>
+    Еженедельное расписание Youtube-стримов
+  </title>
+  <meta content="Расписание Youtube-стримов 2023" name="description">
+  <meta content="" name="keywords">
+  <!-- Favicons -->
+  <link href="assets/img/favicon.ico" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/luxon@3.3.0/build/global/luxon.min.js"></script>
+
+</head>
+
+<body>
+<div class="container text-left">
+  <div class="row pr_header">
+    <div class="col">
+      <h1 class="text-center">
+        <img src="assets/img/youtube.png" class="img_youtbe">
+        Еженедельное расписание Youtube-стримов
+      </h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col col-lg-2 col-md-4 col-12 bgcol1">
+      <h2 class="text-center">
+        Понедельник
+      </h2>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@RZVRT" target="_blank">
               <span class="strim_time">
-                {{time}}
+                7:00–9:00
               </span>
-              — {{title}}
-            </a>
-          </div>
-          {{ /streams }}
-    </script>
-  </head>
-  
-  <body>
-    <div class="container text-left">
-      <div class="row pr_header">
-        <div class="col">
-          <h1 class="text-center">
-            <img src="assets/img/youtube.png" class="img_youtbe">
-            Еженедельное расписание Youtube-стримов
-          </h1>
-        </div>
+          — «РЗВРТ» с Антоном Рубиным и Дашей Литвишко
+        </a>
       </div>
-      <div class="row">
-        <div class="col col-lg-2 col-md-4 col-12 bgcol1" id="day0">
-
-        </div>
-        <div class="col col-lg-2 col-md-4 col-12 bgcol2" id="day1">
-
-        </div>
-        <div class="col col-lg-2 col-md-4 col-12 bgcol1" id="day2">
-
-        </div>
-        <div class="col col-lg-2 col-md-4 col-12 bgcol2" id="day3">
-
-        </div>
-        <div class="col col-lg-2 col-md-4 col-12 bgcol1" id="day4">
-
-        </div>
-        <div class="col col-lg-2 col-md-4 col-12 bgcol2" id="day5">
-
-
-        </div>
+      <div class="strim_name">
+        <a href="https://youtube.com/@IgorYakovenko" target="_blank">
+              <span class="strim_time">
+                7:40–8:40
+              </span>
+          — Стрим Игоря Яковенко
+        </a>
       </div>
-      <div class="row pr_header">
-        <div class="col">
-          <p class="text-center">
-            Еженедельное расписание Youtube-стримов 2023
-          <br>
-		  <a href="https://calendar.google.com/calendar/u/0?cid=Njg3NTBhYzNlYmY3YzUyYTJiZDIyYTk2ZWNjNjc0ZWExNjE2OWVkOWNkMjA3OThmZGJmN2M3ZTg2ZGE0ZmIwM0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t" target="_blank">Google-календарь со стримами</a><br>
-		  <a href="http://www.youtube.com/@kolezev" target="_blank"> Создано патронами Дмитрия Колезева</a></p>
-        </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@plushev" target="_blank">
+              <span class="strim_time">
+                9:00–11:00
+              </span>
+          — Breakfast Show (Александр Плющев и Ко)
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@tvrain" target="_blank">
+              <span class="strim_time">
+                9:00–11:00
+              </span>
+          — Утренний эфир на «Дожде»
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@ishemvihod" target="_blank">
+              <span class="strim_time">
+                11:00–12:00
+              </span>
+          — Эфир «Ищем выход» («Эхо Петербурга»)
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@i_gryanul_grem" target="_blank">
+              <span class="strim_time">
+                14:00–15:00
+              </span>
+          — «И грянул Грэм»
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@tvrain" target="_blank">
+              <span class="strim_time">
+                15:00–15:30
+              </span>
+          — «Здесь и сейчас» («Дождь»)
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@bild_ru" target="_blank">
+              <span class="strim_time">
+                15:00–16:00
+              </span>
+          — Bild на русском
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@zhivoygvozd" target="_blank">
+              <span class="strim_time">
+                15:00–16:00
+              </span>
+          — «Персонально ваш» на ЖГ
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@dwrussian" target="_blank">
+              <span class="strim_time">
+                16:00–17:00
+              </span>
+          — DW Show
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@Popularpolitics" target="_blank">
+              <span class="strim_time">
+                17:00–18:00
+              </span>
+          — «Честное слово» на ПП
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@khodorkovskylive" target="_blank">
+              <span class="strim_time">
+                18:00–19:00
+              </span>
+          — «Воздух» на «Ходорковский Live»
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@i_gryanul_grem" target="_blank">
+              <span class="strim_time">
+                18:00–19:00
+              </span>
+          — «И грянул Грэм»
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@zhivoygvozd" target="_blank">
+              <span class="strim_time">
+                19:00–20:00
+              </span>
+          — «Особое мнение» на ЖГ
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@Radio-Svoboda" target="_blank">
+              <span class="strim_time">
+                19:00–20:00
+              </span>
+          — «Лицом к событию» («Радио Свобода»)
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@Popularpolitics" target="_blank">
+              <span class="strim_time">
+                19:00–21:00
+              </span>
+          — Спецэфир ПП
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@Kolezev" target="_blank">
+              <span class="strim_time">
+                19:00–21:00
+              </span>
+          — Стрим Дмитрия Колезева
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@xlarina" target="_blank">
+              <span class="strim_time">
+                19:00–21:00
+              </span>
+          — Стрим Ксении Лариной
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@PskovYablokoTV" target="_blank">
+              <span class="strim_time">
+                19:00–21:00
+              </span>
+          — «Шлосберг Live»
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@YevgeniaAlbats2022" target="_blank">
+              <span class="strim_time">
+                20:00–21:00
+              </span>
+          — «Полный Альбац»
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@FeyginLive" target="_blank">
+              <span class="strim_time">
+                20:00–21:00
+              </span>
+          — Фейгин с гостем
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@zhivoygvozd" target="_blank">
+              <span class="strim_time">
+                20:00–21:00
+              </span>
+          — «Мовчание» на ЖГ
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@tvrain" target="_blank">
+              <span class="strim_time">
+                20:00–21:30
+              </span>
+          — «Здесь и сейчас» («Дождь»)
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@KSHN" target="_blank">
+              <span class="strim_time">
+                21:00–22:30
+              </span>
+          — Стрим Олега Кашина
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@FeyginLive" target="_blank">
+              <span class="strim_time">
+                22:00–23:30
+              </span>
+          — Фейгин и Арестович
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@Ganapolsky" target="_blank">
+              <span class="strim_time">
+                23:00–00:00
+              </span>
+          — Стрим Матвея Ганапольского
+        </a>
       </div>
     </div>
-    <div id="preloader">
+    <div class="col col-lg-2 col-md-4 col-12 bgcol2">
+      <h2 class="text-center">
+        Вторник
+      </h2>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@RZVRT" target="_blank">
+              <span class="strim_time">
+                7:00–9:00
+              </span>
+          — «РЗВРТ» с Антоном Рубиным и Дашей Литвишко
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://youtube.com/@IgorYakovenko" target="_blank">
+              <span class="strim_time">
+                7:40–8:40
+              </span>
+          — Стрим Игоря Яковенко
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@plushev" target="_blank">
+              <span class="strim_time">
+                9:00–11:00
+              </span>
+          — Breakfast Show (Александр Плющев и Ко)
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@tvrain" target="_blank">
+              <span class="strim_time">
+                9:00–11:00
+              </span>
+          — Утренний эфир на «Дожде»
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@ishemvihod" target="_blank">
+              <span class="strim_time">
+                11:00–12:00
+              </span>
+          — Эфир «Ищем выход» («Эхо Петербурга»)
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@Popularpolitics" target="_blank">
+              <span class="strim_time">
+                13:00–14:00
+              </span>
+          — «Бойко о главном» на ПП
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@i_gryanul_grem" target="_blank">
+              <span class="strim_time">
+                14:00–15:00
+              </span>
+          — «И грянул Грэм»
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@tvrain" target="_blank">
+              <span class="strim_time">
+                15:00–15:30
+              </span>
+          — «Здесь и сейчас» («Дождь»)
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@bild_ru" target="_blank">
+              <span class="strim_time">
+                15:00–16:00
+              </span>
+          — Bild на русском
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@zhivoygvozd" target="_blank">
+              <span class="strim_time">
+                15:00–16:00
+              </span>
+          — «Персонально ваш» на ЖГ
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@dwrussian" target="_blank">
+              <span class="strim_time">
+                16:00–17:00
+              </span>
+          — DW Show
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@Popularpolitics" target="_blank">
+              <span class="strim_time">
+                17:00–18:00
+              </span>
+          — «Честное слово» на ПП
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@khodorkovskylive" target="_blank">
+              <span class="strim_time">
+                18:00–19:00
+              </span>
+          — «Воздух» на «Ходорковский Live»
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@i_gryanul_grem" target="_blank">
+              <span class="strim_time">
+                18:00–19:00
+              </span>
+          — «И грянул Грэм»
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@tvrain" target="_blank">
+              <span class="strim_time">
+                18:00–19:00
+              </span>
+          — «Котрикадзе иностранных дел»</a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@yulialatynina71" target="_blank">
+              <span class="strim_time">
+                19:00–20:00
+              </span>
+          — Белковский у Латыниной
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@zhivoygvozd" target="_blank">
+              <span class="strim_time">
+                19:00–20:00
+              </span>
+          — «Особое мнение» на ЖГ
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@Radio-Svoboda" target="_blank">
+              <span class="strim_time">
+                19:00–20:00
+              </span>
+          — «Лицом к событию» («Радио Свобода»)
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@Popularpolitics" target="_blank">
+              <span class="strim_time">
+                19:00–21:00
+              </span>
+          — Спецэфир ПП
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@FeyginLive" target="_blank">
+              <span class="strim_time">
+                20:00–21:00
+              </span>
+          — Фейгин с гостем
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@tvrain" target="_blank">
+              <span class="strim_time">
+                20:00–21:30
+              </span>
+          — «Здесь и сейчас» («Дождь»)
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@Ekaterina_Schulmann" target="_blank">
+              <span class="strim_time">
+                21:00–22:00
+              </span>
+          — «Статус» Екатерины Шульман
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@KSHN" target="_blank">
+              <span class="strim_time">
+                21:00–22:30
+              </span>
+          — Стрим Олега Кашина
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@Ganapolsky" target="_blank">
+              <span class="strim_time">
+                23:00–00:00
+              </span>
+          — Стрим Матвея Ганапольского
+        </a>
+      </div>
     </div>
-    <a href="#" class="back-to-top d-flex align-items-center justify-content-center">
-      <i class="bi bi-arrow-up-short">
-      </i>
-    </a>
+    <div class="col col-lg-2 col-md-4 col-12 bgcol1">
+      <h2 class="text-center">
+        Среда
+      </h2>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@RZVRT" target="_blank">
+              <span class="strim_time">
+                7:00–9:00
+              </span>
+          — «РЗВРТ» с Антоном Рубиным и Дашей Литвишко
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://youtube.com/@IgorYakovenko" target="_blank">
+              <span class="strim_time">
+                7:40–8:40
+              </span>
+          — Стрим Игоря Яковенко
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@plushev" target="_blank">
+              <span class="strim_time">
+                9:00–11:00
+              </span>
+          — Breakfast Show (Александр Плющев и Ко)
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@tvrain" target="_blank">
+              <span class="strim_time">
+                9:00–11:00
+              </span>
+          — Утренний эфир на «Дожде»
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@ishemvihod" target="_blank">
+              <span class="strim_time">
+                11:00–12:00
+              </span>
+          — Эфир «Ищем выход» («Эхо Петербурга»)
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@i_gryanul_grem" target="_blank">
+              <span class="strim_time">
+                14:00–15:00
+              </span>
+          — «И грянул Грэм»
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@tvrain" target="_blank">
+              <span class="strim_time">
+                15:00–15:30
+              </span>
+          — «Здесь и сейчас» («Дождь»)
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@bild_ru" target="_blank">
+              <span class="strim_time">
+                15:00–16:00
+              </span>
+          — Bild на русском
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@zhivoygvozd" target="_blank">
+              <span class="strim_time">
+                15:00–16:00
+              </span>
+          — «Персонально ваш» на ЖГ
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@dwrussian" target="_blank">
+              <span class="strim_time">
+                16:00–17:00
+              </span>
+          — DW Show
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@Popularpolitics" target="_blank">
+              <span class="strim_time">
+                17:00–18:00
+              </span>
+          — «Честное слово» на ПП
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@khodorkovskylive" target="_blank">
+              <span class="strim_time">
+                18:00–19:00
+              </span>
+          — «Воздух» на «Ходорковский Live»
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@Kolezev" target="_blank">
+              <span class="strim_time">
+                19:00–20:00
+              </span>
+          — Гостевой стрим Колезева
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@zhivoygvozd" target="_blank">
+              <span class="strim_time">
+                19:00–20:00
+              </span>
+          — «Особое мнение» на ЖГ
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@Radio-Svoboda" target="_blank">
+              <span class="strim_time">
+                19:00–20:00
+              </span>
+          — «Лицом к событию» («Радио Свобода»)
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@Popularpolitics" target="_blank">
+              <span class="strim_time">
+                19:00–21:00
+              </span>
+          — Спецэфир ПП
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@zhivoygvozd" target="_blank">
+              <span class="strim_time">
+                20:00–21:00
+              </span>
+          — «Цена вопроса» (Алексашенко) на ЖГ
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@FeyginLive" target="_blank">
+              <span class="strim_time">
+                20:00–21:00
+              </span>
+          — Фейгин с гостем
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@tvrain" target="_blank">
+              <span class="strim_time">
+                20:00–21:30
+              </span>
+          — «Здесь и сейчас» («Дождь»)
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@KSHN" target="_blank">
+              <span class="strim_time">
+                21:00–22:30
+              </span>
+          — Стрим Олега Кашина
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@tfelg" target="_blank">
+              <span class="strim_time">
+                21:00–22:30
+              </span>
+          — Стрим Татьяны Фельгенгауэр
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@FeyginLive" target="_blank">
+              <span class="strim_time">
+                22:00–23:30
+              </span>
+          — Фейгин и Арестович
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@Ganapolsky" target="_blank">
+              <span class="strim_time">
+                23:00–00:00
+              </span>
+          — Стрим Матвея Ганапольского
+        </a>
+      </div>
+    </div>
+    <div class="col col-lg-2 col-md-4 col-12 bgcol2">
+      <h2 class="text-center">
+        Четверг
+      </h2>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@RZVRT" target="_blank">
+              <span class="strim_time">
+                7:00–9:00
+              </span>
+          — «РЗВРТ» с Антоном Рубиным и Дашей Литвишко
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://youtube.com/@IgorYakovenko" target="_blank">
+              <span class="strim_time">
+                7:40–8:40
+              </span>
+          — Стрим Игоря Яковенко
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@plushev" target="_blank">
+              <span class="strim_time">
+                9:00–11:00
+              </span>
+          — Breakfast Show (Александр Плющев и Ко)
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@tvrain" target="_blank">
+              <span class="strim_time">
+                9:00–11:00
+              </span>
+          — Утренний эфир на «Дожде»
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@ishemvihod" target="_blank">
+              <span class="strim_time">
+                11:00–12:00
+              </span>
+          — Эфир «Ищем выход» («Эхо Петербурга»)
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@mediazzzona" target="_blank">
+              <span class="strim_time">
+                13:12–14:30
+              </span>
+          — «В деле» («Медиазона»)
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@i_gryanul_grem" target="_blank">
+              <span class="strim_time">
+                14:00–15:00
+              </span>
+          — «И грянул Грэм»
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@tvrain" target="_blank">
+              <span class="strim_time">
+                15:00–15:30
+              </span>
+          — «Здесь и сейчас» («Дождь»)
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@bild_ru" target="_blank">
+              <span class="strim_time">
+                15:00–16:00
+              </span>
+          — Bild на русском
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@zhivoygvozd" target="_blank">
+              <span class="strim_time">
+                15:00–16:00
+              </span>
+          — «Персонально ваш» на ЖГ
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@dwrussian" target="_blank">
+              <span class="strim_time">
+                16:00–17:00
+              </span>
+          — DW Show
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@Popularpolitics" target="_blank">
+              <span class="strim_time">
+                17:00–18:00
+              </span>
+          — «Честное слово» на ПП
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@yulialatynina71" target="_blank">
+              <span class="strim_time">
+                17:00–18:00
+              </span>
+          — Арестович у Латыниной
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@khodorkovskylive" target="_blank">
+              <span class="strim_time">
+                18:00–19:00
+              </span>
+          — «Воздух» на «Ходорковский Live»
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@i_gryanul_grem" target="_blank">
+              <span class="strim_time">
+                18:00–19:00
+              </span>
+          — «И грянул Грэм»
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@zhivoygvozd" target="_blank">
+              <span class="strim_time">
+                19:00–20:00
+              </span>
+          — «Особое мнение» на ЖГ
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@Radio-Svoboda" target="_blank">
+              <span class="strim_time">
+                19:00–20:00
+              </span>
+          — «Лицом к событию» («Радио Свобода»)
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@Popularpolitics" target="_blank">
+              <span class="strim_time">
+                19:00–21:00
+              </span>
+          — Спецэфир ПП
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@FeyginLive" target="_blank">
+              <span class="strim_time">
+                20:00–21:00
+              </span>
+          — Фейгин с гостем
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@tvrain" target="_blank">
+              <span class="strim_time">
+                20:00–21:30
+              </span>
+          — «Здесь и сейчас» («Дождь»)
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@zhivoygvozd" target="_blank">
+              <span class="strim_time">
+                21:00–22:00
+              </span>
+          — «Пастуховские четверги»
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@KSHN" target="_blank">
+              <span class="strim_time">
+                21:00–22:30
+              </span>
+          — Стрим Олега Кашина
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@zhivoygvozd" target="_blank">
+              <span class="strim_time">
+                22:00–00:00
+              </span>
+          — «Один» Дмитрия Быкова на ЖГ
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@Ganapolsky" target="_blank">
+              <span class="strim_time">
+                23:00–00:00
+              </span>
+          — Стрим Матвея Ганапольского
+        </a>
+      </div>
+    </div>
+    <div class="col col-lg-2 col-md-4 col-12 bgcol1">
+      <h2 class="text-center">
+        Пятница
+      </h2>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@RZVRT" target="_blank">
+              <span class="strim_time">
+                7:00–9:00
+              </span>
+          — «РЗВРТ» с Антоном Рубиным и Дашей Литвишко
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://youtube.com/@IgorYakovenko" target="_blank">
+              <span class="strim_time">
+                7:40–8:40
+              </span>
+          — Стрим Игоря Яковенко
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@tvrain" target="_blank">
+              <span class="strim_time">
+                9:00–11:00
+              </span>
+          — Утренний эфир на «Дожде»
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@zhivoygvozd" target="_blank">
+              <span class="strim_time">
+                9:00–12:00
+              </span>
+          — «Утренний разворот» на ЖГ
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@ishemvihod" target="_blank">
+              <span class="strim_time">
+                11:00–12:00
+              </span>
+          — Эфир «Ищем выход» («Эхо Петербурга»)
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@plushev" target="_blank">
+              <span class="strim_time">
+                12:00–14:00
+              </span>
+          — «Ключевые события» (Плющев)
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@i_gryanul_grem" target="_blank">
+              <span class="strim_time">
+                14:00–15:00
+              </span>
+          — «И грянул Грэм»
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@tvrain" target="_blank">
+              <span class="strim_time">
+                15:00–15:30
+              </span>
+          — «Здесь и сейчас» («Дождь»)
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@bild_ru" target="_blank">
+              <span class="strim_time">
+                15:00–16:00
+              </span>
+          — Bild на русском
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@zhivoygvozd" target="_blank">
+              <span class="strim_time">
+                15:00–16:00
+              </span>
+          — «Персонально ваш» на ЖГ
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@zhivoygvozd" target="_blank">
+              <span class="strim_time">
+                16:00–17:00
+              </span>
+          — «Особое мнение» на ЖГ
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@Popularpolitics" target="_blank">
+              <span class="strim_time">
+                17:00–18:00
+              </span>
+          — «Честное слово» на ПП
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@khodorkovskylive" target="_blank">
+              <span class="strim_time">
+                18:00–19:00
+              </span>
+          — «Воздух» на «Ходорковский Live»
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@i_gryanul_grem" target="_blank">
+              <span class="strim_time">
+                18:00–19:00
+              </span>
+          — «И грянул Грэм»
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@Radio-Svoboda" target="_blank">
+              <span class="strim_time">
+                19:00–20:00
+              </span>
+          — «Лицом к событию» («Радио Свобода»)
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@zhivoygvozd" target="_blank">
+              <span class="strim_time">
+                19:00–20:00
+              </span>
+          — «Особое мнение» на ЖГ
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@Radio-Svoboda" target="_blank">
+              <span class="strim_time">
+                19:00–20:00
+              </span>
+          — «Лицом к событию» («Радио Свобода»)
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@Popularpolitics" target="_blank">
+              <span class="strim_time">
+                19:00–21:00
+              </span>
+          — Спецэфир ПП
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@yulialatynina71" target="_blank">
+              <span class="strim_time">
+                20:00–21:00
+              </span>
+          — Подоляк у Латыниной
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@Ostraneimire" target="_blank">
+              <span class="strim_time">
+                20:00–21:00
+              </span>
+          — Стрим Кирилла Рогова
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@tvrain" target="_blank">
+              <span class="strim_time">
+                20:00–22:00
+              </span>
+          — «И так далее» Фишмана («Дождь»)
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@FeyginLive" target="_blank">
+              <span class="strim_time">
+                20:00–21:00
+              </span>
+          — Фейгин с гостем
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@SVTVofficial" target="_blank">
+              <span class="strim_time">
+                21:00–22:00
+              </span>
+          — Стрим Светова и Кашина
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@sparkhom" target="_blank">
+              <span class="strim_time">
+                21:00–22:00
+              </span>
+          — Стрим Сергея Пархоменко
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@plushev" target="_blank">
+              <span class="strim_time">
+                22:00–2:00
+              </span>
+          — Пятничный «The Стрим» Плющева
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@Ganapolsky" target="_blank">
+              <span class="strim_time">
+                23:00–00:00
+              </span>
+          — Стрим Матвея Ганапольского
+        </a>
+      </div>
+    </div>
+    <div class="col col-lg-2 col-md-4 col-12 bgcol2">
+      <h2 class="text-center">
+        Суббота
+      </h2>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@zhivoygvozd" target="_blank">
+              <span class="strim_time">
+                9:00–12:00
+              </span>
+          — Утренний разворот на ЖГ
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@zhivoygvozd" target="_blank">
+              <span class="strim_time">
+                12:00–13:00
+              </span>
+          — «Будем наблюдать» на ЖГ
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@Popularpolitics" target="_blank">
+              <span class="strim_time">
+                13:00–14:00
+              </span>
+          — «Бойко о главном» на ПП
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@tvrain" target="_blank">
+              <span class="strim_time">
+                15:00–15:30
+              </span>
+          — «Здесь и сейчас» («Дождь»)
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@yulialatynina71" target="_blank">
+              <span class="strim_time">
+                19:00–20:00
+              </span>
+          — «Код доступа» Латыниной</a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@FedorKrasheninnikov" target="_blank">
+              <span class="strim_time">
+                19:00–21:00
+              </span>
+          — Стрим Федора Крашенинникова</a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@FeyginLive" target="_blank">
+              <span class="strim_time">
+                20:00–21:00
+              </span>
+          — Фейгин с гостем
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@tvrain" target="_blank">
+              <span class="strim_time">
+                20:00–21:30
+              </span>
+          — «Здесь и сейчас» («Дождь»)
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@FeyginLive" target="_blank">
+              <span class="strim_time">
+                22:00–23:30
+              </span>
+          — Фейгин и Арестович
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@RZVRT" target="_blank">
+              <span class="strim_time">
+                22:00–0:00
+              </span>
+          — Ночной «РЗВРТ»
+        </a>
+      </div>
+      <h2 class="text-center">
+        Воскресенье
+      </h2>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@zhivoygvozd" target="_blank">
+              <span class="strim_time">
+                9:00–12:00
+              </span>
+          — Утренний разворот на ЖГ
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@tdzyadko" target="_blank">
+              <span class="strim_time">
+                12:00–13:00
+              </span>
+          — Котрикадзе Дзядко. Домашний стрим
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@ninorosebashvili" target="_blank">
+              <span class="strim_time">
+                14:00–16:00
+              </span>
+          — Стрим Нино Росебашвили
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@tvrain" target="_blank">
+              <span class="strim_time">
+                15:00–15:30
+              </span>
+          — «Здесь и сейчас» («Дождь»)
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@i_gryanul_grem" target="_blank">
+              <span class="strim_time">
+                15:00–16:00
+              </span>
+          — Орешкин и Шаблинский («Грэм»)
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@zhivoygvozd" target="_blank">
+              <span class="strim_time">
+                17:00–18:00
+              </span>
+          — Гозман на ЖГ
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@zhivoygvozd" target="_blank">
+              <span class="strim_time">
+                17:00–18:30
+              </span>
+          — Стрим The Insider
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@khodorkovskylive" target="_blank">
+              <span class="strim_time">
+                19:00–20:00
+              </span>
+          — «Чисто конкретная политика» с Владимиром Пастуховым
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@i_gryanul_grem" target="_blank">
+              <span class="strim_time">
+                19:00–21:00
+              </span>
+          — «Итоги Грэма»
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@ishepelin" target="_blank">
+              <span class="strim_time">
+                19:00–22:00
+              </span>
+          — Стрим Шепелина и Захарова
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@yulialatynina71" target="_blank">
+              <span class="strim_time">
+                19:30–20:00
+              </span>
+          — Свитан у Латыниной
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@FeyginLive" target="_blank">
+              <span class="strim_time">
+                20:00–21:00
+              </span>
+          — Фейгин с гостем
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@tvrain" target="_blank">
+              <span class="strim_time">
+                20:00–21:30
+              </span>
+          — «Здесь и сейчас» («Дождь»)
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@plushev" target="_blank">
+              <span class="strim_time">
+                21:00–22:00
+              </span>
+          — «Точка» (Плющев)
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@SVTVofficial" target="_blank">
+              <span class="strim_time">
+                21:00–23:00
+              </span>
+          — Стрим Михаила Светова
+        </a>
+      </div>
+      <div class="strim_name">
+        <a href="https://www.youtube.com/@plushev" target="_blank">
+              <span class="strim_time">
+                22:00–23:00
+              </span>
+          — Classic News с Дмитрием Быковым (Плющев)
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="row pr_header">
+    <div class="col">
+      <p class="text-center">
+        Еженедельное расписание Youtube-стримов 2023
+        <br>
+        <a href="https://calendar.google.com/calendar/u/0?cid=Njg3NTBhYzNlYmY3YzUyYTJiZDIyYTk2ZWNjNjc0ZWExNjE2OWVkOWNkMjA3OThmZGJmN2M3ZTg2ZGE0ZmIwM0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t" target="_blank">Google-календарь со стримами</a><br>
+        <a href="http://www.youtube.com/@kolezev" target="_blank"> Создано патронами Дмитрия Колезева</a><br>
+        <a href="https://www.donationalerts.com/r/kolezev" target="_blank"> Поблагодарить донатом</a></p>
+    </div>
+  </div>
+</div>
+<div id="preloader">
+</div>
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center">
+  <i class="bi bi-arrow-up-short">
+  </i>
+</a>
 
-    <!-- Template Main JS File -->
-    <script src="assets/js/main.js">
-    </script>
-    <script>
-      function convertToLocalTZ(time) {
+<!-- Template Main JS File -->
+<script src="assets/js/main.js">
+</script>
+<script>
+    function convertToLocalTZ(time) {
         var timeBegin = time.split("–")[0].padStart(5, '0')
         var timeEnd = time.split("–")[1].padStart(5, '0')
         return luxon.DateTime.fromFormat(timeBegin + " Europe/Moscow", "HH:mm z").toFormat("H:mm") + "-" +
-                luxon.DateTime.fromFormat(timeEnd + " Europe/Moscow", "HH:mm z").toFormat("H:mm")
-      }
+            luxon.DateTime.fromFormat(timeEnd + " Europe/Moscow", "HH:mm z").toFormat("H:mm")
+    }
 
-      var days = {
-        0: "Понедельник",
-        1: "Вторник",
-        2: "Среда",
-        3: "Четверг",
-        4: "Пятница",
-        5: "Суббота",
-        6: "Воскресенье"
-      }
-      var data = [
-        [
-          {
-            "title": "«РЗВРТ» с Антоном Рубиным и Дашей Литвишко",
-            "time": "7:00–9:00",
-            "channel": "https://www.youtube.com/@RZVRT"
-          }, {
-          "title": "Стрим Игоря Яковенко",
-          "time": "7:40–8:40",
-          "channel": "https://youtube.com/@IgorYakovenko"
-        }, {
-          "title": "Breakfast Show (Александр Плющев и Ко)",
-          "time": "9:00–11:00",
-          "channel": "https://www.youtube.com/@plushev"
-        }, {
-          "title": "Утренний эфир на «Дожде»",
-          "time": "9:00–11:00",
-          "channel": "https://www.youtube.com/@tvrain"
-        }, {
-          "title": "Эфир «Ищем выход» («Эхо Петербурга»)",
-          "time": "11:00–12:00",
-          "channel": "https://www.youtube.com/@ishemvihod"
-        }, {
-          "title": "«И грянул Грэм»",
-          "time": "14:00–15:00",
-          "channel": "https://www.youtube.com/@i_gryanul_grem"
-        }, {
-          "title": "«Здесь и сейчас» («Дождь»)",
-          "time": "15:00–15:30",
-          "channel": "https://www.youtube.com/@tvrain"
-        }, {
-          "title": "Bild на русском",
-          "time": "15:00–16:00",
-          "channel": "https://www.youtube.com/@bild_ru"
-        }, {
-          "title": "«Персонально ваш» на ЖГ",
-          "time": "15:00–16:00",
-          "channel": "https://www.youtube.com/@zhivoygvozd"
-        }, {
-          "title": "DW Show",
-          "time": "16:00–17:00",
-          "channel": "https://www.youtube.com/@dwrussian"
-        }, {
-          "title": "«Честное слово» на ПП",
-          "time": "17:00–18:00",
-          "channel": "https://www.youtube.com/@Popularpolitics"
-        }, {
-          "title": "«Воздух» на «Ходорковский Live»",
-          "time": "18:00–19:00",
-          "channel": "https://www.youtube.com/@khodorkovskylive"
-        }, {
-          "title": "«И грянул Грэм»",
-          "time": "18:00–19:00",
-          "channel": "https://www.youtube.com/@i_gryanul_grem"
-        }, {
-          "title": "«Особое мнение» на ЖГ",
-          "time": "19:00–20:00",
-          "channel": "https://www.youtube.com/@zhivoygvozd"
-        }, {
-          "title": "«Лицом к событию» («Радио Свобода»)",
-          "time": "19:00–20:00",
-          "channel": "https://www.youtube.com/@Radio-Svoboda"
-        }, {
-          "title": "Спецэфир ПП",
-          "time": "19:00–21:00",
-          "channel": "https://www.youtube.com/@Popularpolitics"
-        }, {
-          "title": "Стрим Дмитрия Колезева",
-          "time": "19:00–21:00",
-          "channel": "https://www.youtube.com/@Kolezev"
-        }, {
-          "title": "Стрим Ксении Лариной",
-          "time": "19:00–21:00",
-          "channel": "https://www.youtube.com/@xlarina"
-        }, {
-          "title": "«Шлосберг Live»",
-          "time": "19:00–21:00",
-          "channel": "https://www.youtube.com/@PskovYablokoTV"
-        }, {
-          "title": "«Полный Альбац»",
-          "time": "20:00–21:00",
-          "channel": "https://www.youtube.com/@YevgeniaAlbats2022"
-        }, {
-          "title": "Фейгин с гостем",
-          "time": "20:00–21:00",
-          "channel": "https://www.youtube.com/@FeyginLive"
-        }, {
-          "title": "«Мовчание» на ЖГ",
-          "time": "20:00–21:00",
-          "channel": "https://www.youtube.com/@zhivoygvozd"
-        }, {
-          "title": "«Здесь и сейчас» («Дождь»)",
-          "time": "20:00–21:30",
-          "channel": "https://www.youtube.com/@tvrain"
-        }, {
-          "title": "Стрим Олега Кашина",
-          "time": "21:00–22:30",
-          "channel": "https://www.youtube.com/@KSHN"
-        }, {
-          "title": "Фейгин и Арестович",
-          "time": "22:00–23:30",
-          "channel": "https://www.youtube.com/@FeyginLive"
-        }, {
-          "title": "Стрим Матвея Ганапольского",
-          "time": "23:00–00:00",
-          "channel": "https://www.youtube.com/@Ganapolsky"
-        }
-        ],
-        [
-          {
-            "title": "«РЗВРТ» с Антоном Рубиным и Дашей Литвишко",
-            "time": "7:00–9:00",
-            "channel": "https://www.youtube.com/@RZVRT"
-          }, {
-          "title": "Стрим Игоря Яковенко",
-          "time": "7:40–8:40",
-          "channel": "https://youtube.com/@IgorYakovenko"
-        }, {
-          "title": "Breakfast Show (Александр Плющев и Ко)",
-          "time": "9:00–11:00",
-          "channel": "https://www.youtube.com/@plushev"
-        }, {
-          "title": "Утренний эфир на «Дожде»",
-          "time": "9:00–11:00",
-          "channel": "https://www.youtube.com/@tvrain"
-        }, {
-          "title": "Эфир «Ищем выход» («Эхо Петербурга»)",
-          "time": "11:00–12:00",
-          "channel": "https://www.youtube.com/@ishemvihod"
-        }, {
-          "title": "«Бойко о главном» на ПП",
-          "time": "13:00–14:00",
-          "channel": "https://www.youtube.com/@Popularpolitics"
-        }, {
-          "title": "«И грянул Грэм»",
-          "time": "14:00–15:00",
-          "channel": "https://www.youtube.com/@i_gryanul_grem"
-        }, {
-          "title": "«Здесь и сейчас» («Дождь»)",
-          "time": "15:00–15:30",
-          "channel": "https://www.youtube.com/@tvrain"
-        }, {
-          "title": "Bild на русском",
-          "time": "15:00–16:00",
-          "channel": "https://www.youtube.com/@bild_ru"
-        }, {
-          "title": "«Персонально ваш» на ЖГ",
-          "time": "15:00–16:00",
-          "channel": "https://www.youtube.com/@zhivoygvozd"
-        }, {
-          "title": "DW Show",
-          "time": "16:00–17:00",
-          "channel": "https://www.youtube.com/@dwrussian"
-        }, {
-          "title": "«Честное слово» на ПП",
-          "time": "17:00–18:00",
-          "channel": "https://www.youtube.com/@Popularpolitics"
-        }, {
-          "title": "«Воздух» на «Ходорковский Live»",
-          "time": "18:00–19:00",
-          "channel": "https://www.youtube.com/@khodorkovskylive"
-        }, {
-          "title": "«И грянул Грэм»",
-          "time": "18:00–19:00",
-          "channel": "https://www.youtube.com/@i_gryanul_grem"
-        }, {
-          "title": "«Котрикадзе иностранных дел»",
-          "time": "18:00–19:00",
-          "channel": "https://www.youtube.com/@tvrain"
-        }, {
-          "title": "Белковский у Латыниной",
-          "time": "19:00–20:00",
-          "channel": "https://www.youtube.com/@yulialatynina71"
-        }, {
-          "title": "«Особое мнение» на ЖГ",
-          "time": "19:00–20:00",
-          "channel": "https://www.youtube.com/@zhivoygvozd"
-        }, {
-          "title": "«Лицом к событию» («Радио Свобода»)",
-          "time": "19:00–20:00",
-          "channel": "https://www.youtube.com/@Radio-Svoboda"
-        }, {
-          "title": "Спецэфир ПП",
-          "time": "19:00–21:00",
-          "channel": "https://www.youtube.com/@Popularpolitics"
-        }, {
-          "title": "Фейгин с гостем",
-          "time": "20:00–21:00",
-          "channel": "https://www.youtube.com/@FeyginLive"
-        }, {
-          "title": "«Здесь и сейчас» («Дождь»)",
-          "time": "20:00–21:30",
-          "channel": "https://www.youtube.com/@tvrain"
-        }, {
-          "title": "«Статус» Екатерины Шульман",
-          "time": "21:00–22:00",
-          "channel": "https://www.youtube.com/@Ekaterina_Schulmann"
-        }, {
-          "title": "Стрим Олега Кашина",
-          "time": "21:00–22:30",
-          "channel": "https://www.youtube.com/@KSHN"
-        }, {
-          "title": "Стрим Матвея Ганапольского",
-          "time": "23:00–00:00",
-          "channel": "https://www.youtube.com/@Ganapolsky"
-        },
+    var times = document.querySelectorAll(".strim_time")
+    for (var i = 0; i < times.length; i++) {
+        times[i].innerHTML = convertToLocalTZ(times[i].innerHTML.trim())
+    }
 
-        ],
-        [
-          {
-            "title": "«РЗВРТ» с Антоном Рубиным и Дашей Литвишко",
-            "time": "7:00–9:00",
-            "channel": "https://www.youtube.com/@RZVRT"
-          }, {
-          "title": "Стрим Игоря Яковенко",
-          "time": "7:40–8:40",
-          "channel": "https://youtube.com/@IgorYakovenko"
-        }, {
-          "title": "Breakfast Show (Александр Плющев и Ко)",
-          "time": "9:00–11:00",
-          "channel": "https://www.youtube.com/@plushev"
-        }, {
-          "title": "Утренний эфир на «Дожде»",
-          "time": "9:00–11:00",
-          "channel": "https://www.youtube.com/@tvrain"
-        }, {
-          "title": "Эфир «Ищем выход» («Эхо Петербурга»)",
-          "time": "11:00–12:00",
-          "channel": "https://www.youtube.com/@ishemvihod"
-        }, {
-          "title": "«И грянул Грэм»",
-          "time": "14:00–15:00",
-          "channel": "https://www.youtube.com/@i_gryanul_grem"
-        }, {
-          "title": "«Здесь и сейчас» («Дождь»)",
-          "time": "15:00–15:30",
-          "channel": "https://www.youtube.com/@tvrain"
-        }, {
-          "title": "Bild на русском",
-          "time": "15:00–16:00",
-          "channel": "https://www.youtube.com/@bild_ru"
-        }, {
-          "title": "«Персонально ваш» на ЖГ",
-          "time": "15:00–16:00",
-          "channel": "https://www.youtube.com/@zhivoygvozd"
-        }, {
-          "title": "DW Show",
-          "time": "16:00–17:00",
-          "channel": "https://www.youtube.com/@dwrussian"
-        }, {
-          "title": "«Честное слово» на ПП",
-          "time": "17:00–18:00",
-          "channel": "https://www.youtube.com/@Popularpolitics"
-        }, {
-          "title": "«Воздух» на «Ходорковский Live»",
-          "time": "18:00–19:00",
-          "channel": "https://www.youtube.com/@khodorkovskylive"
-        }, {
-          "title": "Гостевой стрим Колезева",
-          "time": "19:00–20:00",
-          "channel": "https://www.youtube.com/@Kolezev"
-        }, {
-          "title": "«Особое мнение» на ЖГ",
-          "time": "19:00–20:00",
-          "channel": "https://www.youtube.com/@zhivoygvozd"
-        }, {
-          "title": "«Лицом к событию» («Радио Свобода»)",
-          "time": "19:00–20:00",
-          "channel": "https://www.youtube.com/@Radio-Svoboda"
-        }, {
-          "title": "Спецэфир ПП",
-          "time": "19:00–21:00",
-          "channel": "https://www.youtube.com/@Popularpolitics"
-        }, {
-          "title": "«Цена вопроса» (Алексашенко) на ЖГ",
-          "time": "20:00–21:00",
-          "channel": "https://www.youtube.com/@zhivoygvozd"
-        }, {
-          "title": "Фейгин с гостем",
-          "time": "20:00–21:00",
-          "channel": "https://www.youtube.com/@FeyginLive"
-        }, {
-          "title": "«Здесь и сейчас» («Дождь»)",
-          "time": "20:00–21:30",
-          "channel": "https://www.youtube.com/@tvrain"
-        }, {
-          "title": "Стрим Олега Кашина",
-          "time": "21:00–22:30",
-          "channel": "https://www.youtube.com/@KSHN"
-        }, {
-          "title": "Стрим Татьяны Фельгенгауэр",
-          "time": "21:00–22:30",
-          "channel": "https://www.youtube.com/@tfelg"
-        }, {
-          "title": "Фейгин и Арестович",
-          "time": "22:00–23:30",
-          "channel": "https://www.youtube.com/@FeyginLive"
-        }, {
-          "title": "Стрим Матвея Ганапольского",
-          "time": "23:00–00:00",
-          "channel": "https://www.youtube.com/@Ganapolsky"
-        },
-        ],
-        [
-          {
-            "title": "«РЗВРТ» с Антоном Рубиным и Дашей Литвишко",
-            "time": "7:00–9:00",
-            "channel": "https://www.youtube.com/@RZVRT"
-          }, {
-          "title": "Стрим Игоря Яковенко",
-          "time": "7:40–8:40",
-          "channel": "https://youtube.com/@IgorYakovenko"
-        }, {
-          "title": "Breakfast Show (Александр Плющев и Ко)",
-          "time": "9:00–11:00",
-          "channel": "https://www.youtube.com/@plushev"
-        }, {
-          "title": "Утренний эфир на «Дожде»",
-          "time": "9:00–11:00",
-          "channel": "https://www.youtube.com/@tvrain"
-        }, {
-          "title": "Эфир «Ищем выход» («Эхо Петербурга»)",
-          "time": "11:00–12:00",
-          "channel": "https://www.youtube.com/@ishemvihod"
-        }, {
-          "title": "«В деле» («Медиазона»)",
-          "time": "13:12–14:30",
-          "channel": "https://www.youtube.com/@mediazzzona"
-        }, {
-          "title": "«И грянул Грэм»",
-          "time": "14:00–15:00",
-          "channel": "https://www.youtube.com/@i_gryanul_grem"
-        }, {
-          "title": "«Здесь и сейчас» («Дождь»)",
-          "time": "15:00–15:30",
-          "channel": "https://www.youtube.com/@tvrain"
-        }, {
-          "title": "Bild на русском",
-          "time": "15:00–16:00",
-          "channel": "https://www.youtube.com/@bild_ru"
-        }, {
-          "title": "«Персонально ваш» на ЖГ",
-          "time": "15:00–16:00",
-          "channel": "https://www.youtube.com/@zhivoygvozd"
-        }, {
-          "title": "DW Show",
-          "time": "16:00–17:00",
-          "channel": "https://www.youtube.com/@dwrussian"
-        }, {
-          "title": "«Честное слово» на ПП",
-          "time": "17:00–18:00",
-          "channel": "https://www.youtube.com/@Popularpolitics"
-        }, {
-          "title": "Арестович у Латыниной",
-          "time": "17:00–18:00",
-          "channel": "https://www.youtube.com/@yulialatynina71"
-        }, {
-          "title": "«Воздух» на «Ходорковский Live»",
-          "time": "18:00–19:00",
-          "channel": "https://www.youtube.com/@khodorkovskylive"
-        }, {
-          "title": "«И грянул Грэм»",
-          "time": "18:00–19:00",
-          "channel": "https://www.youtube.com/@i_gryanul_grem"
-        }, {
-          "title": "«Особое мнение» на ЖГ",
-          "time": "19:00–20:00",
-          "channel": "https://www.youtube.com/@zhivoygvozd"
-        }, {
-          "title": "«Лицом к событию» («Радио Свобода»)",
-          "time": "19:00–20:00",
-          "channel": "https://www.youtube.com/@Radio-Svoboda"
-        }, {
-          "title": "Спецэфир ПП",
-          "time": "19:00–21:00",
-          "channel": "https://www.youtube.com/@Popularpolitics"
-        }, {
-          "title": "Фейгин с гостем",
-          "time": "20:00–21:00",
-          "channel": "https://www.youtube.com/@FeyginLive"
-        }, {
-          "title": "«Здесь и сейчас» («Дождь»)",
-          "time": "20:00–21:30",
-          "channel": "https://www.youtube.com/@tvrain"
-        }, {
-          "title": "«Пастуховские четверги»",
-          "time": "21:00–22:00",
-          "channel": "https://www.youtube.com/@zhivoygvozd"
-        }, {
-          "title": "Стрим Олега Кашина",
-          "time": "21:00–22:30",
-          "channel": "https://www.youtube.com/@KSHN"
-        }, {
-          "title": "«Один» Дмитрия Быкова на ЖГ",
-          "time": "22:00–00:00",
-          "channel": "https://www.youtube.com/@zhivoygvozd"
-        }, {
-          "title": "Стрим Матвея Ганапольского",
-          "time": "23:00–00:00",
-          "channel": "https://www.youtube.com/@Ganapolsky"
-        }
-        ],
-        [
-          {
-            "title": "«РЗВРТ» с Антоном Рубиным и Дашей Литвишко",
-            "time": "7:00–9:00",
-            "channel": "https://www.youtube.com/@RZVRT"
-          }, {
-          "title": "Стрим Игоря Яковенко",
-          "time": "7:40–8:40",
-          "channel": "https://youtube.com/@IgorYakovenko"
-        }, {
-          "title": "Утренний эфир на «Дожде»",
-          "time": "9:00–11:00",
-          "channel": "https://www.youtube.com/@tvrain"
-        }, {
-          "title": "«Утренний разворот» на ЖГ",
-          "time": "9:00–12:00",
-          "channel": "https://www.youtube.com/@zhivoygvozd"
-        }, {
-          "title": "Эфир «Ищем выход» («Эхо Петербурга»)",
-          "time": "11:00–12:00",
-          "channel": "https://www.youtube.com/@ishemvihod"
-        }, {
-          "title": "«Ключевые события» (Плющев)",
-          "time": "12:00–14:00",
-          "channel": "https://www.youtube.com/@plushev"
-        }, {
-          "title": "«И грянул Грэм»",
-          "time": "14:00–15:00",
-          "channel": "https://www.youtube.com/@i_gryanul_grem"
-        }, {
-          "title": "«Здесь и сейчас» («Дождь»)",
-          "time": "15:00–15:30",
-          "channel": "https://www.youtube.com/@tvrain"
-        }, {
-          "title": "Bild на русском",
-          "time": "15:00–16:00",
-          "channel": "https://www.youtube.com/@bild_ru"
-        }, {
-          "title": "«Персонально ваш» на ЖГ",
-          "time": "15:00–16:00",
-          "channel": "https://www.youtube.com/@zhivoygvozd"
-        }, {
-          "title": "«Особое мнение» на ЖГ",
-          "time": "16:00–17:00",
-          "channel": "https://www.youtube.com/@zhivoygvozd"
-        }, {
-          "title": "«Честное слово» на ПП",
-          "time": "17:00–18:00",
-          "channel": "https://www.youtube.com/@Popularpolitics"
-        }, {
-          "title": "«Воздух» на «Ходорковский Live»",
-          "time": "18:00–19:00",
-          "channel": "https://www.youtube.com/@khodorkovskylive"
-        }, {
-          "title": "«И грянул Грэм»",
-          "time": "18:00–19:00",
-          "channel": "https://www.youtube.com/@i_gryanul_grem"
-        }, {
-          "title": "«Лицом к событию» («Радио Свобода»)",
-          "time": "19:00–20:00",
-          "channel": "https://www.youtube.com/@Radio-Svoboda"
-        }, {
-          "title": "«Особое мнение» на ЖГ",
-          "time": "19:00–20:00",
-          "channel": "https://www.youtube.com/@zhivoygvozd"
-        }, {
-          "title": "«Лицом к событию» («Радио Свобода»)",
-          "time": "19:00–20:00",
-          "channel": "https://www.youtube.com/@Radio-Svoboda"
-        }, {
-          "title": "Спецэфир ПП",
-          "time": "19:00–21:00",
-          "channel": "https://www.youtube.com/@Popularpolitics"
-        }, {
-          "title": "Подоляк у Латыниной",
-          "time": "20:00–21:00",
-          "channel": "https://www.youtube.com/@yulialatynina71"
-        }, {
-          "title": "Стрим Кирилла Рогова",
-          "time": "20:00–21:00",
-          "channel": "https://www.youtube.com/@Ostraneimire"
-        }, {
-          "title": "«И так далее» Фишмана («Дождь»)",
-          "time": "20:00–22:00",
-          "channel": "https://www.youtube.com/@tvrain"
-        }, {
-          "title": "Фейгин с гостем",
-          "time": "20:00–21:00",
-          "channel": "https://www.youtube.com/@FeyginLive"
-        }, {
-          "title": "Стрим Светова и Кашина",
-          "time": "21:00–22:00",
-          "channel": "https://www.youtube.com/@SVTVofficial"
-        }, {
-          "title": "Стрим Сергея Пархоменко",
-          "time": "21:00–22:00",
-          "channel": "https://www.youtube.com/@sparkhom"
-        }, {
-          "title": "Пятничный «The Стрим» Плющева",
-          "time": "22:00–2:00",
-          "channel": "https://www.youtube.com/@plushev"
-        }, {
-          "title": "Стрим Матвея Ганапольского",
-          "time": "23:00–00:00",
-          "channel": "https://www.youtube.com/@Ganapolsky"
-        },
-        ],
-        [
-          {
-            "title": "Утренний разворот на ЖГ",
-            "time": "9:00–12:00",
-            "channel": "https://www.youtube.com/@zhivoygvozd"
-          }, {
-          "title": "«Будем наблюдать» на ЖГ",
-          "time": "12:00–13:00",
-          "channel": "https://www.youtube.com/@zhivoygvozd"
-        }, {
-          "title": "«Бойко о главном» на ПП",
-          "time": "13:00–14:00",
-          "channel": "https://www.youtube.com/@Popularpolitics"
-        }, {
-          "title": "«Здесь и сейчас» («Дождь»)",
-          "time": "15:00–15:30",
-          "channel": "https://www.youtube.com/@tvrain"
-        }, {
-          "title": "«Код доступа» Латыниной",
-          "time": "19:00–20:00",
-          "channel": "https://www.youtube.com/@yulialatynina71"
-        }, {
-          "title": "Стрим Федора Крашенинникова",
-          "time": "19:00–21:00",
-          "channel": "https://www.youtube.com/@FedorKrasheninnikov"
-        }, {
-          "title": "Фейгин с гостем",
-          "time": "20:00–21:00",
-          "channel": "https://www.youtube.com/@FeyginLive"
-        }, {
-          "title": "«Здесь и сейчас» («Дождь»)",
-          "time": "20:00–21:30",
-          "channel": "https://www.youtube.com/@tvrain"
-        }, {
-          "title": "Фейгин и Арестович",
-          "time": "22:00–23:30",
-          "channel": "https://www.youtube.com/@FeyginLive"
-        }, {
-          "title": "Ночной «РЗВРТ»",
-          "time": "22:00–0:00",
-          "channel": "https://www.youtube.com/@RZVRT"
-        },
-        ],
-        [
-          {
-            "title": "Утренний разворот на ЖГ",
-            "time": "9:00–12:00",
-            "channel": "https://www.youtube.com/@zhivoygvozd"
-          }, {
-          "title": "Котрикадзе Дзядко. Домашний стрим",
-          "time": "12:00–13:00",
-          "channel": "https://www.youtube.com/@tdzyadko"
-        }, {
-          "title": "Стрим Нино Росебашвили",
-          "time": "14:00–16:00",
-          "channel": "https://www.youtube.com/@ninorosebashvili"
-        }, {
-          "title": "«Здесь и сейчас» («Дождь»)",
-          "time": "15:00–15:30",
-          "channel": "https://www.youtube.com/@tvrain"
-        }, {
-          "title": "Орешкин и Шаблинский («Грэм»)",
-          "time": "15:00–16:00",
-          "channel": "https://www.youtube.com/@i_gryanul_grem"
-        }, {
-          "title": "Гозман на ЖГ",
-          "time": "17:00–18:00",
-          "channel": "https://www.youtube.com/@zhivoygvozd"
-        }, {
-          "title": "Стрим The Insider",
-          "time": "17:00–18:30",
-          "channel": "https://www.youtube.com/@zhivoygvozd"
-        }, {
-          "title": "«Чисто конкретная политика» с Владимиром Пастуховым",
-          "time": "19:00–20:00",
-          "channel": "https://www.youtube.com/@khodorkovskylive"
-        }, {
-          "title": "«Итоги Грэма»",
-          "time": "19:00–21:00",
-          "channel": "https://www.youtube.com/@i_gryanul_grem"
-        }, {
-          "title": "Стрим Шепелина и Захарова",
-          "time": "19:00–22:00",
-          "channel": "https://www.youtube.com/@ishepelin"
-        }, {
-          "title": "Свитан у Латыниной",
-          "time": "19:30–20:00",
-          "channel": "https://www.youtube.com/@yulialatynina71"
-        }, {
-          "title": "Фейгин с гостем",
-          "time": "20:00–21:00",
-          "channel": "https://www.youtube.com/@FeyginLive"
-        }, {
-          "title": "«Здесь и сейчас» («Дождь»)",
-          "time": "20:00–21:30",
-          "channel": "https://www.youtube.com/@tvrain"
-        }, {
-          "title": "«Точка» (Плющев)",
-          "time": "21:00–22:00",
-          "channel": "https://www.youtube.com/@plushev"
-        }, {
-          "title": "Стрим Михаила Светова",
-          "time": "21:00–23:00",
-          "channel": "https://www.youtube.com/@SVTVofficial"
-        }, {
-          "title": "Classic News с Дмитрием Быковым (Плющев)",
-          "time": "22:00–23:00",
-          "channel": "https://www.youtube.com/@plushev"
-        }
-        ]
-      ]
-      //JSON.stringify([...document.querySelectorAll(".strim_name")].map(span => ({title: span.innerText.split(" — ")[1], time: span.innerText.split(" — ")[0], channel: span.children[0].attributes.href.nodeValue})))
-      const template = document.getElementById('template').innerHTML;
-      for (let i = 0; i < 6; i++) {
-        document.getElementById('day' + i).innerHTML = Mustache.render(template, {
-          day: days[i],
-          streams: data[i].map((it) => ({
-            channel: it.channel,
-            title: it.title,
-            time: convertToLocalTZ(it.time),
-          }))
-        });
-      }
-
-      document.getElementById('day5').innerHTML = Mustache.render(template, {
-        day: days[5],
-        streams: data[5].map((it) => ({
-          channel: it.channel,
-          title: it.title,
-          time: convertToLocalTZ(it.time),
-        }))
-      }) + Mustache.render(template, {
-        day: days[6],
-        streams: data[6].map((it) => ({
-          channel: it.channel,
-          title: it.title,
-          time: convertToLocalTZ(it.time),
-        }))
-      });
-
-    </script>
-
-  </body>
+</script>
+</body>
 
 </html>
