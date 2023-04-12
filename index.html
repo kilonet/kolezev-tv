@@ -1283,10 +1283,11 @@
 <script src="assets/js/main.js">
 </script>
 <script>
+    var splitter = "–";
     function convertToLocalTZ(time) {
-        var timeBegin = time.split("–")[0].padStart(5, '0')
-        var timeEnd = time.split("–")[1].padStart(5, '0')
-        return luxon.DateTime.fromFormat(timeBegin + " Europe/Moscow", "HH:mm z").toFormat("H:mm") + "-" +
+        var timeBegin = time.split(splitter)[0].padStart(5, '0')
+        var timeEnd = time.split(splitter)[1].padStart(5, '0')
+        return luxon.DateTime.fromFormat(timeBegin + " Europe/Moscow", "HH:mm z").toFormat("H:mm") + splitter +
             luxon.DateTime.fromFormat(timeEnd + " Europe/Moscow", "HH:mm z").toFormat("H:mm")
     }
 
